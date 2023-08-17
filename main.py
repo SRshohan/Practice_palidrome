@@ -11,3 +11,8 @@ def palindrome(x):
         reversed_num = reversed_num * 10 + digit  # Formula to reverse
         x //= 10
 
+    return original == reversed_num
+
+print(palindrome(121))  # True
+print(palindrome(-121)) # False
+print(palindrome(10))   # False
